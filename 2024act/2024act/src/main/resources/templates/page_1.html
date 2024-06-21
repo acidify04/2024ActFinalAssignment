@@ -3,25 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Details</title>
+    <title>생애 - 과거</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('assets/images/page_01.png');
+            background-size: cover;
+            /*background-size: 100%; !* 배경 이미지 크기 줄이기 *!*/
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .big_section {
+            margin: 20px;
+            padding: 20px;
+            /*background-color: #fff;*/
+            border-radius: 10px;
+            /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+            /*text-align: left; !* 왼쪽 정렬 *!*/
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
     <link rel="stylesheet" href="assets/stylesheets/page_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="container1" class="container">
-    <button class="toggleButton">Show Details</button>
+<div class="container">
+    <div class="big_section">
+        <button class="nav-button" onclick="location.href='/'">Left Page</button>
+    </div>
+    <div class="big_section">
+
+    </div>
+    <div class="big_section">
+        <button class="nav-button" onclick="location.href='/page_1'">Right Page</button>
+    </div>
+</div>
+
+<div id="container1" class="toggleContainer">
+    <button class="toggleButton">출생</button>
     <div class="details hidden">
-        <p>This is a detailed description of the first item.</p>
+        <p>2004년 7월 24일 광주광역시에서 태어났습니다.</p>
         <img src="image1.jpg" alt="Detailed Image 1">
     </div>
 </div>
 
-<div id="container2" class="container">
-    <button class="toggleButton">Show Details</button>
+<div id="container2" class="toggleContainer">
+    <button class="toggleButton">이사</button>
     <div class="details hidden">
-        <p>This is a detailed description of the second item.</p>
+        <p>4살이 되던 해에 경기도 안양시로 이사를 옵니다. 이후 생애를 모두 안양시에서 보내게 됩니다.</p>
         <img src="image2.jpg" alt="Detailed Image 2">
     </div>
 </div>
+
+
 
 <script src="assets/javascripts/page_1.js"></script>
 </body>
