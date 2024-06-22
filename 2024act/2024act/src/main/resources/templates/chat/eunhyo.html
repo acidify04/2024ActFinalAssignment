@@ -107,7 +107,7 @@
 <div id="chat-container">
     <div id="chat-box"></div>
     <div id="input-box">
-        <input type="text" id="user-input" placeholder="인공지능 은효에게 하고 싶은 말을 해주세요! ex) 은효야 너는 언제 태어났니?">
+        <input type="text" id="user-input" placeholder="\'은효야 너는 꿈이 뭐니?\'라고 질문해보세요">
         <button onclick="sendMessage()">Send</button>
     </div>
 </div>
@@ -119,7 +119,7 @@
 
         addMessage(userInput, 'user-message');
 
-        const response = await fetch('/ask', {
+        const response = await fetch('/api/gpt/ask', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
