@@ -1,5 +1,6 @@
 package com.example._act.controller;
 
+import com.example._act.dto.QuestionDto;
 import com.example._act.service.GptService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,8 @@ public class GptController {
 
     @PostMapping("/ask")
     //@ResponseBody
-    public String askController(@RequestBody String question) {
+    public String askController(@RequestBody QuestionDto questionDto) {
+        String question = questionDto.getQuestion();
         log.info(question);
         //내가 박은효의 정보를 줄게
         //박은효는 ~~야
