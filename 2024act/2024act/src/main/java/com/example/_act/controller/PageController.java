@@ -54,6 +54,11 @@ public class PageController {
         return "present/page_3";
     }
 
+    @GetMapping(value = "/present/page_4")
+    String getPresentPage_04(){
+        return "present/page_4";
+    }
+
     //////////////////////////////////////////////////////////////////
 
     @GetMapping(value = "/future/page_1")
@@ -75,5 +80,9 @@ public class PageController {
         return "future/page_4";
     }
 
+    @GetMapping(value = "/chat/eunhyo")
+    String getChatEunHyo(){
+        return "chat/eunhyo";
+    }
 
 }
