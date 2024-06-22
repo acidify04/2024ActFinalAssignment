@@ -4,7 +4,7 @@ body {
 
 .toggleContainer {
     position: absolute;
-    width: 300px;
+    width: 500px;
 }
 
 /* 위치 조절 */
@@ -40,7 +40,7 @@ body {
     font-size: 18px;
 
     border-radius: 12px; /* 모서리를 둥글게 설정 */
-    width: 300px; /* 가로 크기를 200px로 설정 */
+    width: 500px; /* 가로 크기를 200px로 설정 */
 
 }
 
