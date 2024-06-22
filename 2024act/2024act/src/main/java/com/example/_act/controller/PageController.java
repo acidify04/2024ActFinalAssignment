@@ -75,10 +75,10 @@ public class PageController {
         return "future/page_3";
     }
 
-    @GetMapping(value = "/future/page_4")
-    String getFuturePage_04(){
-        return "future/page_4";
-    }
+//    @GetMapping(value = "/future/page_4")
+//    String getFuturePage_04(){
+//        return "future/page_4";
+//    }
 
     @GetMapping(value = "/chat/eunhyo")
     String getChatEunHyo(){
