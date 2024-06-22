@@ -11,9 +11,69 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class PageController {
 
-    @GetMapping(value = "/page_1")
-    String getMagicUniv_enroll_01(){
-        return "page_1";
+    //////////////////////////////////////////////////////////////////
+    @GetMapping(value = "/index")
+    String getIndex(){
+        return "index";
     }
+    //////////////////////////////////////////////////////////////////
+    @GetMapping(value = "/past/page_1")
+    String getPastPage_01(){
+        return "past/page_1";
+    }
+
+    @GetMapping(value = "/past/page_2")
+    String getPastPage_02(){
+        return "past/page_2";
+    }
+
+    @GetMapping(value = "/past/page_3")
+    String getPastPage_03(){
+        return "past/page_3";
+    }
+
+    @GetMapping(value = "/past/page_4")
+    String getPastPage_04(){
+        return "past/page_4";
+    }
+
+    //////////////////////////////////////////////////////////////////
+
+    @GetMapping(value = "/present/page_1")
+    String getPresentPage_01(){
+        return "present/page_1";
+    }
+
+    @GetMapping(value = "/present/page_2")
+    String getPresentPage_02(){
+        return "present/page_2";
+    }
+
+    @GetMapping(value = "/present/page_3")
+    String getPresentPage_03(){
+        return "present/page_3";
+    }
+
+    //////////////////////////////////////////////////////////////////
+
+    @GetMapping(value = "/future/page_1")
+    String getFuturePage_01(){
+        return "future/page_1";
+    }
+    @GetMapping(value = "/future/page_2")
+    String getFuturePage_02(){
+        return "future/page_2";
+    }
+
+    @GetMapping(value = "/future/page_3")
+    String getFuturePage_03(){
+        return "future/page_3";
+    }
+
+    @GetMapping(value = "/future/page_4")
+    String getFuturePage_04(){
+        return "future/page_4";
+    }
+
 
 }

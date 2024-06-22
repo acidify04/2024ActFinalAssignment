@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생애 - 과거</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('assets/images/page_01.png');
+            background-size: cover;
+            /*background-size: 100%; !* 배경 이미지 크기 줄이기 *!*/
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .big_section {
+            margin: 20px;
+            padding: 20px;
+            /*background-color: #fff;*/
+            border-radius: 10px;
+            /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+            /*text-align: left; !* 왼쪽 정렬 *!*/
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+    <link rel="stylesheet" href="assets/stylesheets/past/page_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="big_section">
+        <button class="nav-button" onclick="location.href='/past/page_1'">Left Page</button>
+    </div>
+    <div class="big_section">
+
+    </div>
+    <div class="big_section">
+        <button class="nav-button" onclick="location.href='/past/page_3'">Right Page</button>
+    </div>
+</div>
+
+<div id="container1" class="toggleContainer">
+    <button class="toggleButton">중학교 1~2학년</button>
+    <div class="details hidden">
+        <p>중학생 때는 일러스트레이터를 꿈꿨습니다. 또한 이때 코딩을 처음 접했습니다.</p>
+        <img src="image1.jpg" alt="Detailed Image 1">
+    </div>
+</div>
+
+<div id="container2" class="toggleContainer">
+    <button class="toggleButton">중학교 3학년</button>
+    <div class="details hidden">
+        <p>파이썬 학원을 다니며 본격적으로 코딩을 배웠습니다. 지구과학에도 관심을 가지게 되었습니다.</p>
+        <img src="image2.jpg" alt="Detailed Image 2">
+    </div>
+</div>
+
+
+
+<script src="assets/javascripts/past/page_2.js"></script>
+</body>
+</html>
