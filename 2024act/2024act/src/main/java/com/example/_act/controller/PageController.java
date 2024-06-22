@@ -75,5 +75,9 @@ public class PageController {
         return "future/page_4";
     }
 
+    @GetMapping(value = "/chat/eunhyo")
+    String getChatEunHyo(){
+        return "chat/eunhyo";
+    }
 
 }
